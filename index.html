@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>黄金猎手秋天版</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <header>
+    <h1>黄金猎手秋天版</h1>
+  </header>
+
+  <main>
+    <div id="price-display">
+      <h2>国际金价: <span id="gold-usd">--</span> USD/oz</h2>
+      <h2>人民币/克: <span id="gold-cny">--</span> 元/克</h2>
+    </div>
+
+    <canvas id="goldChart" width="400" height="200"></canvas>
+
+    <div id="portfolio">
+      <h3>我的持仓</h3>
+      <input type="number" id="holding-grams" placeholder="输入持仓克数">
+      <input type="number" id="buy-price" placeholder="买入价（元/克）">
+      <button id="calculate">计算总价值</button>
+      <p>当前持仓总价值: <span id="total-value">--</span> 元</p>
+    </div>
+
+    <div id="trade-records">
+      <h3>交易记录</h3>
+      <button id="add-trade">添加交易</button>
+      <ul id="records-list"></ul>
+    </div>
+
+    <div id="price-alert">
+      <h3>价格提醒</h3>
+      <input type="number" id="alert-price" placeholder="目标价格（元/克）">
+      <button id="set-alert">设置提醒</button>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

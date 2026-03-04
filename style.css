@@ -1,0 +1,25 @@
+body {
+  font-family: "Microsoft YaHei", sans-serif;
+  background: linear-gradient(#1a1a1a, #0d0d0d);
+  color: gold;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+header {
+  padding: 20px;
+  background-color: #111;
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+}
+h1 { font-size: 2em; color: gold; }
+button {
+  background-color: gold;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover { background-color: #daa520; }
+input { padding: 5px; margin: 5px; width: 120px; }
+canvas { margin: 20px auto; display: block; background-color: #111; border: 1px solid gold; }
